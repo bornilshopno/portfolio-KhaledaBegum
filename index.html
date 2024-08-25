@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Tailwind+DaisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        brightGreen: '#ABEF5F'
+                    },
+                    fontfamily: {
+                        roboto: 'Roboto Serif , serif',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="./Resources/favicon.jpg" type="image/x-icon">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awessome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-roboto text-neutral-600 ">
+    <!--Header Section-->
+
+    <header class="bg-[#decfbc] relative overflow-x-hidden py-5 ;lg:py-10" >
+        <nav class="w-11/12 md:9/12 mx-auto flex justify-end">
+            <ul class="flex items-center gap-5 md:gap-10 px-3 py-1 font-semibold text-base lg:text-2xl z-30">
+                <li><a href="">About Me</a></li>
+                <li><a href=""></a>Projects</li>
+                <li><a href=""></a> <button class="btn btn-active bg-transparent w-48 border-none hover:bg-[#decfbc]"><i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-green-600 text-white rounded-full p-2"></i>
+                <span class="text-2xl">Hire Me!</span></button>
+            </ul>
+
+
+        </nav>
+
+        <Section id="about-me" class="w-11/12 md:9/12 mx-auto">
+            <div class="lg:flex gap-20">
+                <!--information section-->
+                <div class="lg:flex-1 mb-3 mt-auto">
+                    <div>
+                        <h1 class="text-4xl font-bold text-left py-10 z-30">Hi! I'm <br><span class="text-5xl">KHALEDA
+                            Begum</span></h1>
+                    <h2 class="text-4xl font-medium text-left pb-5">Front-End Web Developer</h2>
+                    </div>
+                    <p class="pb-10">"Creating smooth, user-friendly websites with attention to detail, I turn ideas into interactive
+                        designs. Blending creativity and code, I make sure your website looks great and works well on
+                        all devices, delivering a polished online experience."</p>
+
+                    <div class="flex gap-10 justify-center items-center">
+                        <button class="btn btn-active  bg-orange-400 w-40">Download CV</button>
+                        <button class="btn btn-active bg-orange-400 w-40"><i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-green-600 text-white rounded-full p-2"></i>
+                        <span>Hire Me!</span></button>
+                    </div>
+                </div>
+                <!--image section-->
+                <div class="lg:flex-1 z-10">
+                    <img class="w-full  mt-5" src="./Resources/banner -image.png" alt="">
+                </div>
+
+            </div>
+        </Section>
+        <div class="absolute top-0 -right-40 md:-top-4 md:-right-32 z-20 sm:top-0" >
+            <img src="./Resources/banner-wave.png" alt="">
+        </div>
+    </header>
+
+    <!--Expertise Section-->
+
+    <section class=" bg-gradient-to-b from-[#decfbc] to-orange-400 py-10 lg:py-20 ">
+        <h1 class="text-5xl font-bold text-center shadow-sm mb-10 py-4 ">Frameworks and Language Skills</h1>
+        <section class="w-11/12 md:9/12 mx-auto">
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 container">
+    
+                <div class="mx-auto flex-col items-center justify-center bg-gradient-to-r from-orange-400 to-[#decfbc] w-52 h-40 p-5 border-4 border-orange-400  rounded-3xl">
+                    <img class="mx-auto h-20 p-4" src="./Resources/html.png" alt="">
+                    <h2 class="text-xl text-center font-bold ">HTML5</h2>
+                </div>
+                <div class="mx-auto flex-col items-center justify-center bg-gradient-to-r from-orange-400 to-[#decfbc] w-52 h-40 p-5 border-4 border-orange-400  rounded-3xl">
+                    <img class="mx-auto h-20 p-4" src="./Resources/css.png" alt="">
+                    <h2 class="text-xl text-center font-bold">CSS3</h2>
+                </div>
+                <div class="mx-auto flex-col items-center justify-center bg-gradient-to-r from-orange-400 to-[#decfbc] w-52 h-40 p-5 border-4 border-orange-400  rounded-3xl">
+                    <img class="mx-auto h-20 p-4" src="./Resources/tailwind.png" alt="">
+                    <h2 class="text-xl text-center font-bold">Tailwind</h2>
+                </div>
+                <div class="mx-auto flex-col items-center justify-center bg-gradient-to-r from-orange-400 to-[#decfbc] w-52 h-40 p-5 border-4 border-orange-400  rounded-3xl">
+                    <img class="mx-auto h-20 p-4" src="./Resources/js.png" alt="">
+                    <h2 class="text-xl text-center font-bold ">JavaScript</h2>
+                </div>
+                <div class="mx-auto flex-col items-center justify-center bg-gradient-to-r from-orange-400 to-[#decfbc] w-52 h-40 p-5 border-4 border-orange-400  rounded-3xl">
+                    <img class="mx-auto h-20 p-4" src="./Resources/react.png" alt="">
+                    <h2 class="text-xl text-center font-bold">React</h2>
+                </div>
+                <div class="mx-auto flex-col items-center justify-center bg-gradient-to-r from-orange-400 to-[#decfbc] w-52 h-40 p-5 border-4 border-orange-400  rounded-3xl">
+                    <img class="mx-auto h-20 p-4" src="./Resources/NodeJs.png" alt="">
+                    <h2 class="text-xl text-center font-bold">Node Js</h2>
+                </div>
+                
+            </div>
+        </section>
+    </section>
+
+
+    <!--Portfolio Section-->
+    <section class="bg-gradient-to-b from-orange-400 to-[#decfbc] py-10 lg:py-20">
+        <h1 class="text-5xl font-bold text-center mb-10 py-4 shadow-sm">My Portfolio</h1>
+        <div class="w-11/12 md:9/12 mx-auto">
+          
+            <p class="text-medium font-bold text-center mb-10 py-4 rounded-3xl">Explore my portfolio to discover a collection of innovative web projects showcasing expertise in responsive design, interactive features, and clean, efficient code. Dive into the details to see how I bring creativity and precision to every front-end development project.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5  mx-auto border-2 border-red-950">
+                <div class="h-72  bg-red-500">
+
+                </div>
+                <div class="h-72  bg-yellow-500">
+
+                </div>
+                <div class="h-72  bg-green-500">
+
+                </div>
+                <div class="h-72  bg-red-500">
+
+                </div>
+                <div class="h-72  bg-yellow-500">
+
+                </div>
+                <div class="h-72  bg-green-500">
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+</body>
+<!--Footer Section-->
+<footer class=" bg-gradient-to-br from-[#decfbc] to-orange-400 py-10 lg:py-20 flex flex-col justify-center items-center relative overflow-hidden" >
+  
+        <h1 class="text-4xl text-center font-bold pb-4 z-10">KHALEDA
+            Begum</h1>
+        <p class="text-center md:w-7/12 mx-auto z-10">Together, we can work to make beautiful projects!</p>
+
+            <div class="social-icons flex gap-4 mx-auto justify-center py-5 z-10">
+                
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+          
+            </div>
+            <button class="btn  bg-orange-400 w-40 z-10"><i
+                class="fa-solid fa-arrow-right -rotate-45 bg-green-600 text-white rounded-full p-2"></i>
+            <span>Hire Me!</span></button>
+
+            <p class="text-center py-2 w-full absolute bottom-0"> All right reserved!</p>
+
+
+
+        
+
+        
+  
+</footer>
+
+
+
+</html>
